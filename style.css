@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -5,7 +6,6 @@ body {
     background-color: #114264;
     color: #fff;
     overflow-x: hidden;
-    
 }
 
 header {
@@ -19,19 +19,19 @@ header {
     align-items: center;
     padding: 10px;
     backdrop-filter: blur(25px);
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    margin: 25px;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 50px;
 }
 
 nav ul li a {
@@ -61,11 +61,11 @@ nav ul li a {
     background-color: #A17169;
     color: #FFFFFF;
     padding: 40px 20px;
-    text-align: left;
+    text-align: center;
     backdrop-filter: blur(50px);
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); 
-   
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .social-media {
     display: flex;
     justify-content: center;
@@ -76,7 +76,7 @@ nav ul li a {
 .social-media a {
     display: flex;
     align-items: center;
-    margin: 0 20px; /* Espacio entre iconos */
+    margin: 0 500px; /* Espacio entre iconos */
     text-decoration: none;
     color: #114264;
     font-weight: bold;
@@ -102,7 +102,6 @@ nav ul li a {
     border-radius: 25px;
     cursor: pointer;
     font-weight: 600;
-    
 }
 
 .login-modal {
@@ -114,25 +113,25 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .login-content {
-    background-color: rgb(83, 39, 40, 0.5);
+    background-color: #FFFFFF;
+    color: #000;
     padding: 40px;
     border-radius: 15px;
     text-align: center;
     backdrop-filter: blur(25px);
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-    
 }
 
 .login-content input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border-radius: 15px;
-    border: 5px solid #ced0ba;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 .panel {
@@ -190,81 +189,4 @@ nav ul li a {
 
 /* Estilos personalizados para el segundo panel (Acerca de) */
 #acerca-de.panel {
-    background-color: #CD7059; /* Un color distinto para variar */
-    color: #FFFFFF; /* Texto oscuro */
-}
-
-/* ... (todo tu CSS anterior) ... */
-
-/* Consultas de medios para dispositivos móviles */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .main-content {
-        padding: 10px;
-    }
-
-    .panel-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .panel-image {
-        max-width: 90%;
-        margin: 10px 0;
-    }
-
-    .panel-text {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .footer {
-        padding: 20px 10px;
-    }
-
-    .social-media {
-        flex-direction: column;
-    }
-
-    .social-media a {
-        margin: 10px 0;
-    }
-
-    .login-content {
-        width: 90%;
-        padding: 20px;
-    }
-}
-
-/* Consultas de medios para dispositivos muy pequeños */
-@media (max-width: 480px) {
-    .logo {
-        width: 80px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-
-    .panel-text h2 {
-        font-size: 28px;
-    }
-
-    .panel-text p {
-        font-size: 16px;
-    }
-}
+    background-color: #CD7059;
