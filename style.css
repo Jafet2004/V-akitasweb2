@@ -193,3 +193,78 @@ nav ul li a {
     background-color: #CD7059; /* Un color distinto para variar */
     color: #FFFFFF; /* Texto oscuro */
 }
+
+/* ... (todo tu CSS anterior) ... */
+
+/* Consultas de medios para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .panel-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panel-image {
+        max-width: 90%;
+        margin: 10px 0;
+    }
+
+    .panel-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .social-media {
+        flex-direction: column;
+    }
+
+    .social-media a {
+        margin: 10px 0;
+    }
+
+    .login-content {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* Consultas de medios para dispositivos muy pequeños */
+@media (max-width: 480px) {
+    .logo {
+        width: 80px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .panel-text h2 {
+        font-size: 28px;
+    }
+
+    .panel-text p {
+        font-size: 16px;
+    }
+}
