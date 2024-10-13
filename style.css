@@ -1,0 +1,195 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #114264;
+    color: #fff;
+    overflow-x: hidden;
+    
+}
+
+header {
+    background-color: rgba(17, 66, 100, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    backdrop-filter: blur(25px);
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 25px;
+    padding: 20px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.logo {
+    margin-left: 25px;
+    width: 120px;
+    border-radius: 60px;
+}
+
+.main-content {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.button-right {
+    margin-left: auto;
+}
+
+.footer {
+    background-color: #A17169;
+    color: #FFFFFF;
+    padding: 40px 20px;
+    text-align: left;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); 
+   
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-media a {
+    display: flex;
+    align-items: center;
+    margin: 0 20px; /* Espacio entre iconos */
+    text-decoration: none;
+    color: #114264;
+    font-weight: bold;
+}
+
+.social-icon {
+    width: 30px; /* Tamaño de los iconos */
+    height: auto;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.login-btn, .download-btn {
+    background-color: #A17169;
+    color: #114264;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 5px;
+    margin-right: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+
+.login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.login-content {
+    background-color: rgb(83, 39, 40, 0.5);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(25px);
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.login-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 15px;
+    border: 5px solid #ced0ba;
+}
+
+.panel {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CD7059; /* Fondo color por defecto */
+    color: #CD7059; /* Texto oscuro para contraste */
+}
+
+.panel-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.panel-image {
+    max-width: 45%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.panel-text {
+    max-width: 50%;
+}
+
+.panel-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.panel-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Estilos personalizados para el primer panel (Inicio) */
+#inicio.panel {
+    background-color: #CD7059; /* Color oscuro */
+    color: #fff; /* Texto blanco */
+}
+
+#inicio .panel-text h2, #inicio .panel-text p {
+    color: white; /* Texto en blanco para el panel oscuro */
+}
+
+/* Invertir el orden del segundo panel (Acerca de) */
+#acerca-de .panel-content {
+    flex-direction: row-reverse; /* Imagen a la derecha, texto a la izquierda */
+}
+
+/* Estilos personalizados para el segundo panel (Acerca de) */
+#acerca-de.panel {
+    background-color: #CD7059; /* Un color distinto para variar */
+    color: #FFFFFF; /* Texto oscuro */
+}
